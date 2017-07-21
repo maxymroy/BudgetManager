@@ -1,0 +1,134 @@
+﻿@{
+    ViewData["Title"] = "Budget Manager";
+}
+@model ManagementApp.ViewModels.ExpenseViewModel
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="container">
+    <h2>Incomes</h2>
+    <div class="row">
+        @foreach (var user in Model.Users)
+        {
+            ManagementApp.ViewModels.IncomeGridViewModel bla = new ManagementApp.ViewModels.IncomeGridViewModel(user.Id);
+            @Html.DisplayFor(x => bla, "Incomes")
+        }
+    </div>
+    <h2>Expenses</h2>
+    <div class="row">
+        @foreach (var user in Model.Users)
+        {
+            ManagementApp.ViewModels.ExpenseGridViewModel bla = new ManagementApp.ViewModels.ExpenseGridViewModel(user.Id);
+            @Html.DisplayFor(x => bla, "Budget")
+        }
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>BiWeekly Difference</th>
+                <th>Monthly Difference</th>
+                <th>Yearly Difference</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Users)
+            {
+                <tr>
+                    @Html.Partial("BudgetTotals", new ManagementApp.ViewModels.BudgetTotalsViewModel(user.Id))
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Add A New Expense</h2>
+            @Html.Partial("AddExpense", new ManagementApp.ViewModels.ExpenseManagingViewModel())
+        </div>
+        <div class="col-md-6">
+            <h2>Add A New Income</h2>
+            @Html.Partial("AddIncome", new ManagementApp.ViewModels.IncomeManagingViewModel())
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        function validateFloatKeyPress(el, evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            var number = el.value.split('.');
+            if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            //just one dot (thanks ddlab)
+            if (number.length > 1 && charCode == 46) {
+                return false;
+            }
+            //get the carat position
+            var caratPos = getSelectionStart(el);
+            var dotPos = el.value.indexOf(".");
+            if (caratPos > dotPos && dotPos > -1 && (number[1].length > 1)) {
+                return false;
+            }
+            return true;
+        }
+
+        //thanks: http://javascript.nwbox.com/cursor_position/
+        function getSelectionStart(o) {
+            if (o.createTextRange) {
+                var r = document.selection.createRange().duplicate()
+                r.moveEnd('character', o.value.length)
+                if (r.text == '') return o.value.length
+                return o.value.lastIndexOf(r.text)
+            } else return o.selectionStart
+        };
+        $(document).ready(function () {
+
+            $('[id*="delete_expense_btn"]').click(function () {
+                var id = $(this).attr("data-id");
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("DeleteExpense", "Budget")',
+                    data: { id: id }
+
+                }).done(function () {
+                    window.location.reload();
+                });
+            });
+
+             $('[id*="delete_income_btn"]').click(function () {
+                var id = $(this).attr("data-id");
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("DeleteIncome", "Budget")',
+                    data: { id: id }
+
+                }).done(function () {
+                    window.location.reload();
+                });
+            });
+
+
+
+            $.validator.methods.number = function (value, element) {
+                return this.optional(element) || jQuery.isNumeric(Globalize.parseFloat(value));
+            }
+
+            //Fix the range to use globalized methods
+            jQuery.extend(jQuery.validator.methods, {
+                range: function (value, element, param) {
+                    var val = Globalize.parseFloat(value);
+                    return this.optional(element) || (val >= param[0] && val <= param[1]);
+                }
+            });
+
+            $.validator.methods.date = function (value, element) {
+                return (this.optional(element) || Globalize.parseDate(value));
+            }
+        });
+    </script>
+}

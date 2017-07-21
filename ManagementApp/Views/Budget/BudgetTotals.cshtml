@@ -1,0 +1,6 @@
+﻿@model ManagementApp.ViewModels.BudgetTotalsViewModel
+
+<td>@Model.User.Name</td>
+<td class="@(Model.BiWeeklyTotal <= 0 ? "expense" : "income")">@Html.DisplayFor(x=>x.BiWeeklyTotal)$</td>
+<td class="@(Model.MonthlyTotal <= 0 ? "expense" : "income")">@Html.DisplayFor(x=>x.MonthlyTotal)$</td>
+<td class="@(Model.YearlyTotal <= 0 ? "expense" : "income")">@Html.DisplayFor(x=>x.YearlyTotal)$</td>

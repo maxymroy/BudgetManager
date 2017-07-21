@@ -1,0 +1,40 @@
+﻿@model ManagementApp.ViewModels.ExpenseGridViewModel
+
+<div class="col-md-6">
+    <h2>@Model.User.Name</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>BiWeekly</th>
+                <th>Monthly</th>
+                <th>Yearly</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Expenses)
+            {
+                <tr>
+                    <td>@Html.ActionLink(item.Description, "EditExpense", "Budget", new { item.ID }, null)</td>
+                    <td class="expense">@Html.DisplayFor(m => item.BiWeekly)$</td>
+                    <td class="expense">@Html.DisplayFor(m => item.Monthly)$</td>
+                    <td class="expense">@Html.DisplayFor(m => item.Yearly)$</td>
+                    <td>
+                        <input class="btn btn-danger" type="button" id="delete_expense_btn" data-id="@item.ID" value="Delete" />
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td class="bold">Total: </td>
+                <td class="expense"><label id="BiWeeklyTotal">@Model.BiWeeklyTotal.ToString("0.00") $</label></td>
+                <td class="expense"><label id="MonthlyTotal">@Model.MonthlyTotal.ToString("0.00") $</label></td>
+                <td class="expense"><label id="YearlyTotal">@Model.YearlyTotal.ToString("0.00") $</label></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript">
+
+</script>

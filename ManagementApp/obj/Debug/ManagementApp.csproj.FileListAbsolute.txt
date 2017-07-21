@@ -1,0 +1,154 @@
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\ApplicationInsights.config
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\csc.exe
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\csc.exe.config
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\csc.rsp
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\csi.exe
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\csi.rsp
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\System.AppContext.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\System.Collections.Immutable.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\System.IO.FileSystem.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\vbc.exe
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\vbc.exe.config
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\vbc.rsp
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\VBCSCompiler.exe
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\roslyn\VBCSCompiler.exe.config
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\ManagementApp.dll.config
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\ManagementApp.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\ManagementApp.pdb
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Antlr3.Runtime.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.AI.Web.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.AI.WindowsServer.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.ApplicationInsights.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.Web.Infrastructure.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Newtonsoft.Json.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.Helpers.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.Mvc.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.Optimization.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.Razor.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.WebPages.Deployment.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.WebPages.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.WebPages.Razor.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\WebGrease.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.Helpers.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.Mvc.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.Optimization.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.Razor.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.WebPages.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.WebPages.Deployment.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Web.WebPages.Razor.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Antlr3.Runtime.pdb
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Newtonsoft.Json.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.ApplicationInsights.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.AI.WindowsServer.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\Microsoft.AI.Web.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\obj\Debug\ManagementApp.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\obj\Debug\ManagementApp.pdb
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\EntityFramework.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\EntityFramework.SqlServer.dll
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\EntityFramework.xml
+c:\users\royma3\documents\visual studio 2017\Projects\ManagementApp\ManagementApp\bin\EntityFramework.SqlServer.xml
+C:\Users\royma3\Documents\Visual Studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Data.SQLite.dll
+C:\Users\royma3\Documents\Visual Studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Data.SQLite.EF6.dll
+C:\Users\royma3\Documents\Visual Studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Data.SQLite.Linq.dll
+C:\Users\royma3\Documents\Visual Studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Data.SQLite.xml
+C:\Users\royma3\Documents\Visual Studio 2017\Projects\ManagementApp\ManagementApp\bin\System.Data.SQLite.dll.config
+C:\Users\royma3\Documents\Visual Studio 2017\Projects\ManagementApp\ManagementApp\obj\Debug\ManagementApp.csprojResolveAssemblyReference.cache
+C:\Users\royma3\Documents\Visual Studio 2017\Projects\ManagementApp\ManagementApp\bin\App_Data\ManagementApp.sqlite
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\ApplicationInsights.config
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\App_Data\ManagementApp.sqlite
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\csc.exe
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\csc.exe.config
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\csc.rsp
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\csi.exe
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\csi.rsp
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\System.AppContext.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\vbc.exe
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\vbc.exe.config
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\vbc.rsp
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\ManagementApp.dll.config
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\ManagementApp.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\ManagementApp.pdb
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Antlr3.Runtime.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\EntityFramework.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\EntityFramework.SqlServer.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.AI.Web.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Newtonsoft.Json.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Data.SQLite.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Data.SQLite.EF6.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Data.SQLite.Linq.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.Helpers.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.Mvc.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.Optimization.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.Razor.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.WebPages.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\WebGrease.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\EntityFramework.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\EntityFramework.SqlServer.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Data.SQLite.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Data.SQLite.dll.config
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.Helpers.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.Mvc.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.Optimization.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.Razor.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.WebPages.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Antlr3.Runtime.pdb
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Newtonsoft.Json.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\bin\Microsoft.AI.Web.xml
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\obj\Debug\ManagementApp.dll
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\obj\Debug\ManagementApp.pdb
+C:\Users\royma3\Desktop\ManagementApp\ManagementApp\obj\Debug\ManagementApp.csprojResolveAssemblyReference.cache
