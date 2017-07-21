@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Globalization;
 
 namespace ManagementApp.Controllers
 {
@@ -27,7 +28,6 @@ namespace ManagementApp.Controllers
             if (ModelState.IsValid)
             {
                 var expenseRepository = new ExpenseRepository();
-
                 expenseRepository.AddExpense(item.ExpenseItem);
             }
             return RedirectToAction("Index");
