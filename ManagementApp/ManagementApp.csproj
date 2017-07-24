@@ -209,6 +209,7 @@
     <Compile Include="ViewModels\IncomeGridViewModel.cs" />
     <Compile Include="ViewModels\IncomeManagingViewModel.cs" />
     <Compile Include="ViewModels\IncomeViewModel.cs" />
+    <Compile Include="ViewModels\UserManagerViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\ManagementDB.mdf" />
@@ -293,6 +294,7 @@
     <Content Include="Views\Shared\DisplayTemplates\Incomes.cshtml" />
     <Content Include="Views\Budget\EditIncome.cshtml" />
     <Content Include="Views\Budget\BudgetTotals.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Users.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

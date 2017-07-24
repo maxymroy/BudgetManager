@@ -1,33 +1,40 @@
-﻿@model IEnumerable<ManagementApp.DataContext.Users>
+﻿@model ManagementApp.ViewModels.UserManagerViewModel
 
 @{
     ViewBag.Title = "Users";
 }
 
-<h2>View</h2>
+<h2>User Manager</h2>
 
-<p>
-    @Html.ActionLink("Create A New User", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th></th>
-    </tr>
+<h2>Manage The Current Users</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(m=>m.Users.SingleOrDefault().Name)
+            </th>
+            <th>Action</th>
+        </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @*@Html.ActionLink("Details", "Details", new { id=item.Id }) |*@
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new {@class = "btn btn-danger" })
-        </td>
-    </tr>
+        @Html.DisplayFor(x=>x.Users)
+
+    </table>
+    <input type="submit" class="btn btn-primary" value="Confirm Changes" />
 }
 
-</table>
+<h2>Create A New User</h2>
+
+<div class="container">
+    @using (Html.BeginForm("CreateUser", "User"))
+    {
+        <div class="col-md-12 row form-group">
+            <label for="txtName">Username: </label>
+            <input class="form-control" type="text" id="txtName" name="txtName" required />
+        </div>
+        <div class="col-md-12 row form-group">
+            <input class="btn btn-primary" type="submit" id="btnSubmitNewUser" />
+        </div>
+    }
+</div>
