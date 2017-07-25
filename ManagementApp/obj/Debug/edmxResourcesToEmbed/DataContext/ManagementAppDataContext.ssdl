@@ -1,5 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="ManagementDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Clothes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdditionnalNote" Type="nvarchar" MaxLength="255" />
+    <Property Name="Color" Type="int" Nullable="false" />
+    <Property Name="ClothesType" Type="int" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="ClothingType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Color">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
   <EntityType Name="Expenses">
     <Key>
       <PropertyRef Name="Id" />
@@ -27,6 +51,21 @@
     <Property Name="Frequency" Type="nchar" MaxLength="1" Nullable="false" />
     <Property Name="User_Id" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="LinkSuitClothes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SuitId" Type="int" Nullable="false" />
+    <Property Name="ClothesId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Suit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_Id" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="Users">
     <Key>
       <PropertyRef Name="Id" />
@@ -35,9 +74,14 @@
     <Property Name="Name" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <EntityContainer Name="ManagementDBModelStoreContainer">
+    <EntitySet Name="Clothes" EntityType="Self.Clothes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClothingType" EntityType="Self.ClothingType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Expenses" EntityType="Self.Expenses" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Frequencies" EntityType="Self.Frequencies" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Incomes" EntityType="Self.Incomes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LinkSuitClothes" EntityType="Self.LinkSuitClothes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Suit" EntityType="Self.Suit" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

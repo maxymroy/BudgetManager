@@ -25,9 +25,14 @@ namespace ManagementApp.DataContext
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Clothes> Clothes { get; set; }
+        public virtual DbSet<ClothingType> ClothingType { get; set; }
+        public virtual DbSet<Color> Color { get; set; }
         public virtual DbSet<Expenses> Expenses { get; set; }
         public virtual DbSet<Frequencies> Frequencies { get; set; }
-        public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Incomes> Incomes { get; set; }
+        public virtual DbSet<LinkSuitClothes> LinkSuitClothes { get; set; }
+        public virtual DbSet<Suit> Suit { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
     }
 }

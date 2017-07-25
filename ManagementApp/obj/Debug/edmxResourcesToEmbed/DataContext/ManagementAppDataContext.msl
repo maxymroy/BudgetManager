@@ -1,14 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="ManagementDBModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Clothes">
+      <EntityTypeMapping TypeName="ManagementDBModel.Clothes">
+        <MappingFragment StoreEntitySet="Clothes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AdditionnalNote" ColumnName="AdditionnalNote" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="ClothesType" ColumnName="ClothesType" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClothingType">
+      <EntityTypeMapping TypeName="ManagementDBModel.ClothingType">
+        <MappingFragment StoreEntitySet="ClothingType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Color">
+      <EntityTypeMapping TypeName="ManagementDBModel.Color">
+        <MappingFragment StoreEntitySet="Color">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Expenses">
       <EntityTypeMapping TypeName="ManagementDBModel.Expenses">
         <MappingFragment StoreEntitySet="Expenses">
-          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Amount" ColumnName="Amount" />
           <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -20,22 +47,39 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Incomes">
+      <EntityTypeMapping TypeName="ManagementDBModel.Incomes">
+        <MappingFragment StoreEntitySet="Incomes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LinkSuitClothes">
+      <EntityTypeMapping TypeName="ManagementDBModel.LinkSuitClothes">
+        <MappingFragment StoreEntitySet="LinkSuitClothes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SuitId" ColumnName="SuitId" />
+          <ScalarProperty Name="ClothesId" ColumnName="ClothesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suit">
+      <EntityTypeMapping TypeName="ManagementDBModel.Suit">
+        <MappingFragment StoreEntitySet="Suit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="ManagementDBModel.Users">
         <MappingFragment StoreEntitySet="Users">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Incomes">
-      <EntityTypeMapping TypeName="ManagementDBModel.Incomes">
-        <MappingFragment StoreEntitySet="Incomes">
-          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
-          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
-          <ScalarProperty Name="Amount" ColumnName="Amount" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
