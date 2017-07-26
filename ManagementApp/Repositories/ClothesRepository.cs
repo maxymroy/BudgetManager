@@ -29,6 +29,7 @@ namespace ManagementApp.Repositories
             using (var datacontext = new Entities())
             {
                 datacontext.Clothes.Add(clothes);
+                datacontext.SaveChanges();
             }
         }
     }

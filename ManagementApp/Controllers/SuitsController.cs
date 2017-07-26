@@ -48,7 +48,7 @@ namespace ManagementApp.Controllers
         public ActionResult AddClothes(Clothes newClothes)
         {
             ClothesRepository clothesRepo = new ClothesRepository();
-            clothesRepo.CreateClothes(newClothes);
+            clothesRepo.CreateClothes(new Clothes {ClothesType = newClothes.ClothesType,AdditionnalNote = newClothes.AdditionnalNote,Color = newClothes.Color,Image = newClothes.Image });
             return Content("Success :)");
         }
 

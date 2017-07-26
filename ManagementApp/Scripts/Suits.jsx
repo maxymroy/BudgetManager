@@ -49,15 +49,15 @@ var CommentForm = React.createClass({
             return;
         }
         this.props.onClothesSubmit({ ClothesType: type, Color: color, AdditionnalNote: note });
-        this.setState({ type: '', color: '', note: '' });
+        this.setState({ type: '', color: '', additionnalNote: '' });
     },
     render: function () {
         return (
-            <form className="commentForm" onSubmit={this.handleSubmit} >
-                <input type="text" placeholder="Type" value={this.state.type} onChange={this.handleTypeChange} />
-                <input type="text" placeholder="Color" value={this.state.color} onChange={this.handleColorChange} />
-                <input type="text" placeholder="Additionnal Notes" value={this.state.additionnalNote} onChange={this.handleNoteChange} />
-                <input type="submit" value="Post" />
+            <form className="commentForm col-md-12" onSubmit={this.handleSubmit} >
+                <input className="form-control col-md-3" type="text" placeholder="Type" value={this.state.type} onChange={this.handleTypeChange} />
+                <input className="form-control col-md-3" type="text" placeholder="Color" value={this.state.color} onChange={this.handleColorChange} />
+                <input className="form-control col-md-3" type="text" placeholder="Additionnal Notes" value={this.state.additionnalNote} onChange={this.handleNoteChange} />
+                <input type="submit" value="Create" className="btn btn-primary col-md-3" />
             </form>
         );
     }
