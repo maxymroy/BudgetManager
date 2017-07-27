@@ -58,22 +58,40 @@ namespace ManagementApp.Controllers
         [OutputCache(Location = OutputCacheLocation.None)]
         public ActionResult Clothes()
         {
+            List<ClothesModel> clothesModel = new List<ClothesModel>();
             ClothesRepository clothesRepo = new ClothesRepository();
+            ColorRepository colorRepo = new ColorRepository();
+            ClothesTypeRepository clothesTypeRepo = new ClothesTypeRepository();
             var allCLothes = clothesRepo.GetAllClothes();
-            foreach(var clothe in allCLothes)
+            foreach(var clothe in allCLothes.OrderBy(c=>c.ClothesType))
             {
-                if(clothe.AdditionnalNote == null)
-                {
-                    clothe.AdditionnalNote = "";
-                }
+                clothesModel.Add(new ClothesModel {Id = clothe.Id,
+                    AdditionnalNote = clothe.AdditionnalNote == null ? "N/A" : clothe.AdditionnalNote,
+                    ClothesType = clothesTypeRepo.GetAllClothingTypes().Where(t => t.Id == clothe.ClothesType).SingleOrDefault().Name,
+                    Color = colorRepo.GetAllColors().Where(c => c.Id == clothe.Color).SingleOrDefault().Name, Image = clothe.Image == null ? "" : clothe.Image
+                });
             }
-            return Json(allCLothes, JsonRequestBehavior.AllowGet);
+            return Json(clothesModel, JsonRequestBehavior.AllowGet);
         }
 
         [OutputCache(Location = OutputCacheLocation.None)]
         public ActionResult Comments()
         {
             return Json(_comments, JsonRequestBehavior.AllowGet);
+        }
+
+        [OutputCache(Location = OutputCacheLocation.None)]
+        public ActionResult Colors()
+        {
+            ColorRepository colorRepo = new ColorRepository();
+            return Json(colorRepo.GetAllColors(), JsonRequestBehavior.AllowGet);
+        }
+
+        [OutputCache(Location = OutputCacheLocation.None)]
+        public ActionResult ClothesTypes()
+        {
+            ClothesTypeRepository clothesTypeRepo = new ClothesTypeRepository();
+            return Json(clothesTypeRepo.GetAllClothingTypes(), JsonRequestBehavior.AllowGet);
         }
     }
 }

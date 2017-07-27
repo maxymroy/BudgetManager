@@ -32,6 +32,18 @@ namespace ManagementApp
             );
 
             routes.MapRoute(
+                name: "Colors",
+                url: "colors",
+                defaults: new { controller = "Suits", action = "Colors" }
+                );
+
+            routes.MapRoute(
+                name: "ClothesTypes",
+                url: "clothestypes",
+                defaults: new { controller = "Suits", action = "ClothesTypes" }
+                );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

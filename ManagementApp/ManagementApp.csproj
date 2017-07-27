@@ -247,12 +247,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ClothesModel.cs" />
     <Compile Include="Models\CommentModel.cs" />
     <Compile Include="Models\ExpenseItem.cs" />
     <Compile Include="Models\IncomeItem.cs" />
     <Compile Include="Models\Indicators.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ClothesRepository.cs" />
+    <Compile Include="Repositories\ClothesTypeRepository.cs" />
+    <Compile Include="Repositories\ColorRepository.cs" />
     <Compile Include="Repositories\ExpenseRepository.cs" />
     <Compile Include="Repositories\FrequencyRepository.cs" />
     <Compile Include="Repositories\IncomeRepository.cs" />

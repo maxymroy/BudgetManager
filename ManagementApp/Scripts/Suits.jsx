@@ -26,10 +26,44 @@
     }
 });
 
+var DropDownOption = React.createClass({
+    render: function () {
+        var i = 0;
+        return (
+            <option key={i++} value={this.props.value}>{this.props.name}</option>
+        )
+    }
+});
+
 
 var CommentForm = React.createClass({
     getInitialState: function () {
-        return { type: '', color: '', additionnalNote: '' };
+        return { type: '', color: '', additionnalNote: '', colors: [], clothingTypes: [] };
+    },
+
+    loadColorsFromServer: function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', this.props.colorsUrl, true);
+        xhr.onload = function () {
+            var data = JSON.parse(xhr.responseText);
+            this.setState({ colors: data });
+        }.bind(this);
+        xhr.send();
+    },
+
+    loadClothingTypesFromServer: function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', this.props.clothingTypesUrl, true);
+        xhr.onload = function () {
+            var data = JSON.parse(xhr.responseText);
+            this.setState({ clothingTypes: data });
+        }.bind(this);
+        xhr.send();
+    },
+
+    componentDidMount: function () {
+        this.loadColorsFromServer();
+        this.loadClothingTypesFromServer();
     },
     handleTypeChange: function (e) {
         this.setState({ type: e.target.value });
@@ -49,19 +83,47 @@ var CommentForm = React.createClass({
             return;
         }
         this.props.onClothesSubmit({ ClothesType: type, Color: color, AdditionnalNote: note });
-        this.setState({ type: '', color: '', additionnalNote: '' });
+        this.setState({ type: 1, color: 1, additionnalNote: '' });
     },
     render: function () {
+
+        var colorNodes = this.state.colors.map(function (color) {
+            return (
+                <DropDownOption key={color.Id} value={color.Id} name={color.Name} />
+            )
+        });
+
+        var clothingTypesNodes = this.state.clothingTypes.map(function (clothingType) {
+            return (
+                <DropDownOption key={clothingType.Id} value={clothingType.Id} name={clothingType.Name} />
+            )
+        });
+
         return (
             <form className="commentForm col-md-12" onSubmit={this.handleSubmit} >
-                <input className="form-control col-md-3" type="text" placeholder="Type" value={this.state.type} onChange={this.handleTypeChange} />
-                <input className="form-control col-md-3" type="text" placeholder="Color" value={this.state.color} onChange={this.handleColorChange} />
-                <input className="form-control col-md-3" type="text" placeholder="Additionnal Notes" value={this.state.additionnalNote} onChange={this.handleNoteChange} />
-                <input type="submit" value="Create" className="btn btn-primary col-md-3" />
+                <div className="form-group row">
+                    <label className="col-md-2 col-form-label">Type:</label>
+                    <select onChange={this.handleTypeChange} value={this.state.type} className="form-control">
+                        {clothingTypesNodes}
+                    </select>
+                </div>
+                <div className="form-group row">
+                    <label className="col-md-2 col-form-label">Color:</label>
+                    <select onChange={this.handleColorChange} value={this.state.color} className="form-control col-md-12">
+                        {colorNodes}
+                    </select>
+                </div>
+                <div className="form-group row">
+                    <label className="col-md-2 col-form-label"></label>
+                    <textarea className="form-control col-md-12" type="text" placeholder="Additionnal Notes" value={this.state.additionnalNote} onChange={this.handleNoteChange}> </textarea>
+                </div>
+                <input type="submit" value="Create" className="btn btn-primary" />
             </form>
         );
     }
 });
+
+
 
 var Comment = React.createClass({
     rawMarkup: function () {
@@ -129,7 +191,9 @@ var CommentBox = React.createClass({
             <div className="commentBox">
                 <h1>Articles</h1>
                 <ClothesList data={this.state.data} />
-                <CommentForm onClothesSubmit={this.handleCommentSubmit} />
+
+                <h2>Add a new article: </h2>
+                <CommentForm colorsUrl="/colors" clothingTypesUrl="/clothestypes" onClothesSubmit={this.handleCommentSubmit} />
             </div>
         );
     }
